@@ -1,0 +1,33 @@
+body {
+    background-color: #f9f5d7;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    color: #1c888e;
+}
+
+#sidebar {
+    width: var(--resizing-sidebar-width, 10vw);
+    margin-left: 10px;
+    margin-top: 100px;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+}
+
+#resize-bar {
+    cursor: ew-resize;
+    width: 2px;
+    background-color: #a89984;
+}
+
+#content {
+    flex: 1;
+}
+
+.info {
+    margin: 0px;
+    margin-left: 15px;
+}

@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <h1>Hello world</h1>
+        <div id="sidebar">
+            <details>
+                <summary>Basics</summary>
+                <p class="info">xor</p>
+                <p class="info">and</p>
+                <a href="{{ '/articles/xor.html' | relative_url }}" class="info">xor</a>
+            </details>
+            <details>
+                <summary>Symetrics</summary>
+            </details>
+        </div>
+        <div id="resize-bar"></div>
+        <div id="content">
+            {{ content }}
+            <h1 style="padding-left: 20px;">Cryptography</h1>
+        </div>
+
+        <script src="{{ '/main.js' | relative_url }}"></script>
     </body>
 </html>
