@@ -1,7 +1,4 @@
----
-layout: default
-title: "all o XOR"
----
+
 # XOR
 
 | A | B | result |

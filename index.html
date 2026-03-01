@@ -5,7 +5,9 @@
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     </head>
     <body>
-        <div id="sidebar">
+        <div id="title">Cryptography</div>
+        <div id="contents">
+            <div id="sidebar">
             <details>
                 <summary>Basics</summary>
                 <p class="info" style="cursor:pointer" onclick="loadMarkdown('xor.md')">xor</p>
@@ -14,12 +16,10 @@
             <details>
                 <summary>Symetrics</summary>
             </details>
+            </div>
+            <div id="resize-bar"></div>
+            <div id="content"></div>
         </div>
-        <div id="resize-bar"></div>
-        <div id="content">
-            <h1 style="padding-left: 20px;">Cryptography</h1>
-        </div>
-
         <script src="./main.js"></script>
     </body>
 </html>
