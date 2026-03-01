@@ -1,0 +1,37 @@
+#contents {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+#sidebar {
+    width: var(--resizing-sidebar-width, 10vw);
+
+    margin-left: 10px;
+    margin-top: 10px;
+
+    overflow-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+}
+
+#resize-bar {
+    cursor: ew-resize;
+    width: 2px;
+    background-color: #a89984;
+}
+
+.expand  {
+    font-weight: bold;
+}
+
+.sub-expand {
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.leaf {
+    padding-left: 20px;
+    margin: 0px;
+    cursor: pointer;
+}

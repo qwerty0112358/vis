@@ -1,0 +1,53 @@
+#main-content {
+    flex: 1;
+}
+#test {
+    font-size: 1.1rem;
+    color: #1c888e !important;
+    margin: 15px;
+}
+
+#test2 {
+    font-size: 1.1rem;
+    color: #876678 !important;
+    margin: 15px;
+}
+
+#main-content h1 {
+    margin: 10px;
+
+    font-size: 1.8rem;
+    color: #1c888e;
+}
+
+#main-content p {
+    font-size: 1.1rem;
+    color: #3c3836;
+    margin: 15px;
+}
+
+#main-content h6 {
+    margin: 10px;
+
+    font-size: 1.1rem;
+    color: #1c888e;
+}
+
+#main-content table {
+    border-collapse: collapse;
+    margin: 15px;
+    background-color: #fdfae3;
+}
+
+#main-content td, #main-content th {
+    border: 1px solid #a89984;
+    padding: 15px 15px;
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+#main-content th {
+    background-color: #a89984;
+    color: #f9f5d7;
+}

@@ -29,8 +29,16 @@ function stopResize(e) {
     document.body.style.cursor = 'default';
 }
 
+const article = document.querySelectorAll('.leaf');
+article.forEach(leaf => {
+    leaf.addEventListener('click', () => {
+        const fileName = leaf.id + '.md';
+        loadMarkdown(fileName);
+    })
+});
+
 async function loadMarkdown(fileName) {
     const response = await fetch(`./articles/${fileName}`); 
     const markdown = await response.text();
-    document.getElementById('content').innerHTML = marked.parse(markdown);
+    document.getElementById('main-content').innerHTML = marked.parse(markdown);
 }

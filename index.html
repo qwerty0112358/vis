@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="styles/body-tittle.css">
+        <link rel="stylesheet" href="styles/contents-sidebar.css">
+        <link rel="stylesheet" href="styles/main-content.css">
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     </head>
     <body>
-        <div id="title">Cryptography</div>
+        <div id="tittle">Cryptography</div>
         <div id="contents">
             <div id="sidebar">
-            <details>
-                <summary>Basics</summary>
-                <p class="info" style="cursor:pointer" onclick="loadMarkdown('xor.md')">xor</p>
-                <p class="info">and</p>
-            </details>
-            <details>
-                <summary>Symetrics</summary>
-            </details>
+                <details>
+                    <summary class="expand">Basics</summary>
+                    <details>
+                        <summary class="sub-expand">Logical operations</summary>
+                        <p class="leaf" id="xor">xor</p>
+                        <p class="leaf" id="and">and</p>
+                    </details>
+                </details>
+                <details>
+                    <summary class="expand">Symetrics</summary>
+                </details>
             </div>
             <div id="resize-bar"></div>
-            <div id="content"></div>
+            <div id="main-content">
+                <h1>In progress...</h1>
+                <p>This site will soon be interesting. I hope.</p>
+                <p id="test">This site will soon be interesting. I hope.</p>
+                <p id="test2">This site will soon be interesting. I hope.</p>
+            </div>
         </div>
-        <script src="./main.js"></script>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/sidebar.js"></script>
     </body>
 </html>
