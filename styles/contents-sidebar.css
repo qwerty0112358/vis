@@ -7,8 +7,8 @@
 #sidebar {
     width: var(--resizing-sidebar-width, 10vw);
 
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: 15px;
+    margin-top: 15px;
 
     overflow-wrap: break-word;
     word-break: break-all;
@@ -23,15 +23,18 @@
 
 .expand  {
     font-weight: bold;
+    cursor: pointer;
 }
 
 .sub-expand {
-    padding-left: 10px;
+    padding-left: 15px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .leaf {
-    padding-left: 20px;
+    padding-left: 30px;
     margin: 0px;
     cursor: pointer;
+    color: #3c3836;
 }

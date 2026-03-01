@@ -32,13 +32,20 @@ function stopResize(e) {
 const article = document.querySelectorAll('.leaf');
 article.forEach(leaf => {
     leaf.addEventListener('click', () => {
-        const fileName = leaf.id + '.md';
-        loadMarkdown(fileName);
+        loadMarkdown(leaf.dataset.file);
     })
 });
 
 async function loadMarkdown(fileName) {
+    let last = fileName.slice(-7);
+
+    fileName = fileName.replace(last, "") + ".md";
     const response = await fetch(`./articles/${fileName}`); 
     const markdown = await response.text();
     document.getElementById('main-content').innerHTML = marked.parse(markdown);
+
+    last = last.replace("-", "");
+    const targetId = last.replace(".md", "");
+    const element = document.getElementById(targetId);
+    element.scrollIntoView(true);
 }
