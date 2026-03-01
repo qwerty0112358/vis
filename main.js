@@ -28,3 +28,9 @@ function stopResize(e) {
     window.removeEventListener("pointerup", stopResize);
     document.body.style.cursor = 'default';
 }
+
+async function loadMarkdown(fileName) {
+    const response = await fetch(`./articles/${fileName}`); 
+    const markdown = await response.text();
+    document.getElementById('content').innerHTML = marked.parse(markdown);
+}
