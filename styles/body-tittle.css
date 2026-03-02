@@ -1,3 +1,17 @@
+:root {
+    --background-color:  #f9f5d7;
+    --font-heading-color: #1c888e;
+    --basic-text-color: #242424;
+    --border-color: #a89984;
+}
+
+.darkmode {
+    --background-color:  #242424;
+    --font-heading-color: #a89984;
+    --basic-text-color: #f2f0f1;
+    --border-color: #3c3836;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -9,22 +23,50 @@ body {
 
     font-family: sans-serif;
 
-    background-color: #f9f5d7;
-    color: #1c888e;
+    background-color: var(--background-color);
+    color: var(--font-heading-color);
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding-right: 20px;
+    padding-left: 15px;
+    height: 10vh;
+    border-bottom: 2px solid var(--border-color);
 }
 
 #tittle {
     cursor: pointer;
-
-    display: flex;
-    justify-content: left;
-    align-items: center;
-
-    padding-left: 15px;
-    height: 10vh;
-
     font-size: 2.5rem;
     font-weight: bold;
+}
 
-    border-bottom: 2px solid #a89984;
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 0px;
+    background-color: var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#theme-switch svg {
+    fill: var(--basic-text-color);
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
 }

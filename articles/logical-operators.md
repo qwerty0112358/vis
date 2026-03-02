@@ -1,3 +1,5 @@
+<h1 id="lgo">Logical Operations</h1>
+
 <h1 id="xor">XOR</h1>
 
 | A | B | result |

@@ -1,6 +1,7 @@
-const comeback = document.getElementById('tittle');
+const toHomePage = document.getElementById('tittle');
 
-comeback.addEventListener('click', () => {
+toHomePage.addEventListener('click', () => {
+    localStorage.removeItem('loadfile');
     location.reload();
 });
 
@@ -13,3 +14,23 @@ if (mainContent.children.length > 0) {
     mainContent.classList.remove('home-page');
     mainContent.classList.add('markdown'); 
 }
+
+let darkmode = localStorage.getItem('darkmode');
+const themeSwitch = document.getElementById('theme-switch');
+
+const enableDarkmode = () => {
+    document.body.classList.add('darkmode');
+    localStorage.setItem('darkmode', 'active');
+}
+
+const disableDarkmode = () => {
+    document.body.classList.remove('darkmode');
+    localStorage.setItem('darkmode', null);
+}
+
+if (darkmode == 'active') enableDarkmode()
+
+themeSwitch.addEventListener('click', () => {
+    darkmode = localStorage.getItem('darkmode');
+    darkmode !== 'active' ? enableDarkmode() : disableDarkmode();
+});

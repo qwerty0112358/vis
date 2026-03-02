@@ -18,7 +18,7 @@
 #resize-bar {
     cursor: ew-resize;
     width: 2px;
-    background-color: #a89984;
+    background-color: var(--border-color);
 }
 
 .expand  {
@@ -36,5 +36,5 @@
     padding-left: 30px;
     margin: 0px;
     cursor: pointer;
-    color: #3c3836;
+    color: var(--basic-text-color);
 }

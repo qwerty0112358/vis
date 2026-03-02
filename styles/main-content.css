@@ -7,23 +7,23 @@
     margin: 20px;
 
     font-size: 1.8rem;
-    color: #1c888e;
+    color: var(--font-heading-color);
 }
 
 #main-content p {
     font-size: 1.1rem;
-    color: #3c3836;
+    color: var(--basic-text-color);
     margin: 20px;
 }
 
 #main-content table {
     border-collapse: collapse;
     margin: 15px;
-    background-color: #fdfae3;
+    background-color: var(--background-color);
 }
 
 #main-content td, #main-content th {
-    border: 1px solid #a89984;
+    border: 1px solid var(--border-color);
     padding: 20px 20px;
 
     text-align: center;
@@ -31,10 +31,15 @@
 }
 
 #main-content td {
-    color: #3c3836;
+    color: var(--basic-text-color);
 }
 
 #main-content th {
-    background-color: #a89984;
-    color: #f9f5d7;
+    background-color: var(--border-color);
+    color: var(--background-color);
+}
+
+.darkmode #main-content th {
+    background-color: var(--font-heading-color);
+    color: var(--background-color);
 }
