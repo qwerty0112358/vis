@@ -1,11 +1,10 @@
 #main-content {
     flex: 1;
     overflow-y: auto;
+    padding-left: 20px;
 }
 
 #main-content h1 {
-    margin: 20px;
-
     font-size: 1.8rem;
     color: var(--font-heading-color);
 }
@@ -13,7 +12,6 @@
 #main-content p {
     font-size: 1.1rem;
     color: var(--basic-text-color);
-    margin: 20px;
 }
 
 #main-content table {
@@ -24,8 +22,6 @@
 
 #main-content td, #main-content th {
     border: 1px solid var(--border-color);
-    padding: 20px 20px;
-
     text-align: center;
     vertical-align: middle;
 }
@@ -42,4 +38,8 @@
 .darkmode #main-content th {
     background-color: var(--font-heading-color);
     color: var(--background-color);
+}
+
+pre {
+    color: var(--basic-text-color);
 }

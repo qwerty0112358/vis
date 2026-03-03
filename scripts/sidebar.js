@@ -48,6 +48,7 @@ async function loadMarkdownFromClick(fileName) {
     const element = document.getElementById(targetId);
     element.scrollIntoView(true);
     localStorage.setItem('loadfile', fileName);
+    MathJax.typesetPromise();
 }
 
 async function loadMarkdownRefresh(fileName) {
@@ -56,6 +57,7 @@ async function loadMarkdownRefresh(fileName) {
     const markdown = await response.text();
     document.getElementById('main-content').innerHTML = marked.parse(markdown);
     localStorage.setItem('loadfile', fileName);
+    MathJax.typesetPromise();    
 }
 
 window.addEventListener('beforeunload', () => {

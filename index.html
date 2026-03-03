@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script>
+            window.MathJax = {
+                tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+                }
+            };
+        </script>
         <link rel="stylesheet" href="styles/body-tittle.css">
         <link rel="stylesheet" href="styles/contents-sidebar.css">
         <link rel="stylesheet" href="styles/main-content.css">
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script id="MathJax" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     </head>
     <body>
         <div id="navbar">
@@ -34,6 +42,7 @@
                         <p class="leaf" data-file="logical-operators-xor.md">xor</p>
                         <p class="leaf" data-file="logical-operators-and.md">and</p>
                     </details>
+                    <p class="leaf" data-file="base64-b64.md">Base64</p>
                 </details>
                 <details>
                     <summary class="expand">Symetrics</summary>
